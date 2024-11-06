@@ -1,0 +1,199 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+}
+
+.img-logo {
+    width: 10%;
+
+}
+
+/* Background Photo */
+.background-photo {
+    background-image: url('./img/bkk1.jfif');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(39, 107, 11);
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    /* Добавление тени для текста */
+}
+
+.background-photo h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 57px;
+    line-height: 1.1;
+    margin: 0;
+}
+
+.txt-h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 37px;
+}
+
+/* Second Div */
+.second-div {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+    /* Обеспечивает адаптивность */
+}
+
+.image-section {
+    text-align: center;
+    flex-basis: 45%;
+    /* Задает ширину для адаптивности */
+    margin: 20px 0;
+}
+
+.img-right {
+    padding-top: 30%;
+
+
+}
+
+.image-section h3 {
+    color: purple;
+}
+
+.txt {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 57px;
+}
+
+/* Form Section */
+.form-container {
+    display: flex;
+    padding: 50px 20px;
+    background-color: darkgreen;
+
+}
+
+.form-section {
+    color: black;
+    padding: 20px;
+    width: 300px;
+    /* Фиксированная ширина для формы */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-right: 50px;
+    /* Отступ для текста */
+}
+
+.form-section h2 {
+    color: black;
+}
+
+input,
+textarea,
+button {
+    margin: 10px 0;
+    padding: 10px;
+    width: calc(100% - 22px);
+}
+
+#message {
+    height: 100px;
+}
+
+button {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Text Section */
+.text-section {
+    max-width: 600px;
+    /* Ограничивает ширину текстового блока */
+    flex-grow: 1;
+    /* Позволяет текстовому блоку занимать оставшееся пространство */
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+    /* Обеспечивает адаптивность */
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .background-photo h1 {
+        font-size: 36px;
+        /* Уменьшает размер шрифта для мобильных */
+    }
+
+    .second-div {
+        flex-direction: column;
+        /* Структура для мобильных */
+        align-items: center;
+    }
+
+    .form-container {
+        flex-direction: column;
+        /* Вертикальная компоновка на мобильных */
+        align-items: center;
+    }
+
+    .form-section {
+        margin-right: 0;
+        /* Убирает отступ на мобильных */
+
+        width: 100%;
+        /* Ширина формы на мобильных */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 18px;
+        /* Уменьшает размер шрифта логотипа */
+    }
+
+    footer p {
+        font-size: 12px;
+        /* Уменьшает размер шрифта в футере */
+    }
+}
